@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cafvjaswuc500"]
+
+[ext_resource type="Script" uid="uid://bgdjx7ta2gq82" path="res://computer.gd" id="1_18hgq"]
+[ext_resource type="Texture2D" uid="uid://dfgiogcqkq45k" path="res://icon.svg" id="2_gcbbq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jr5mb"]
+size = Vector2(232, 231)
+
+[node name="Computer" type="Area2D"]
+script = ExtResource("1_18hgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 1, 1)
+texture = ExtResource("2_gcbbq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 2.5)
+shape = SubResource("RectangleShape2D_jr5mb")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -55.0
+offset_top = -16.0
+offset_right = 56.0
+offset_bottom = 34.0
+text = "Computador
+"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
