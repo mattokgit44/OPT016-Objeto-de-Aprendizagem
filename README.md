@@ -23,3 +23,5 @@ O design instrucional deste jogo é focado em atender aos seguintes requisitos d
 
 ## Modelo Conceitual
 ![Jogo_Educativo_-_Cibersegurança_v2](https://github.com/user-attachments/assets/2b47d57f-d522-4312-be53-f0652626fa3c)
+## Modelo Instrucional
+<img width="4460" height="721" alt="Diagrama sem nome drawio" src="https://github.com/user-attachments/assets/e8c46ab3-b3d7-45d6-86aa-aff00f3ca168" />
